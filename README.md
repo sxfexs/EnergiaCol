@@ -1,3 +1,4 @@
+
 # Visor Energético de Colombia
 
 Este repositorio contiene un visor web desarrollado con [Leaflet](https://leafletjs.com/) para explorar capas geoespaciales relacionadas con la infraestructura energética y condicionantes socioambientales de Colombia.
@@ -92,3 +93,4 @@ Los archivos GeoJSON de ejemplo ubicados en el directorio `data/` sirven como pl
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` si decides añadir uno al repositorio. Los datos de OpenStreetMap se encuentran bajo la licencia [ODbL](https://opendatacommons.org/licenses/odbl/).
+=======
