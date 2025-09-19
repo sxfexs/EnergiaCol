@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visor Energético de Colombia</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-o9N1j7kPBi0hA6kz+oTX0bAd/8erFScsZdP4tF+4Wj0="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Visor de Datos Energéticos de Colombia</h1>
+      <p>
+        Visualiza la infraestructura eléctrica y capas ambientales clave para
+        la planeación energética del país.
+      </p>
+    </header>
+
+    <main class="app-layout">
+      <section class="map-panel">
+        <div id="map"></div>
+      </section>
+      <aside class="info-panel">
+        <section>
+          <h2>Capas disponibles</h2>
+          <p>
+            Utiliza el control de capas en la esquina superior derecha del mapa
+            para activar o desactivar la información que necesites.
+          </p>
+        </section>
+        <section class="layer-status" id="layer-status">
+          <h3>Estado de carga</h3>
+          <ul id="status-list"></ul>
+        </section>
+        <section class="help">
+          <h2>Instrucciones</h2>
+          <ol>
+            <li>
+              <strong>Subestaciones</strong> y <strong>Red eléctrica</strong> se
+              consultan dinámicamente desde OpenStreetMap mediante la API de
+              Overpass.
+            </li>
+            <li>
+              Las demás capas se cargan desde archivos GeoJSON locales o
+              servicios WMS configurables en
+              <code>assets/js/app.js</code>.
+            </li>
+            <li>
+              Puedes adaptar la configuración de fuentes de datos según tus
+              necesidades sin modificar la estructura general del visor.
+            </li>
+          </ol>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <small>
+        Datos de OpenStreetMap disponibles bajo la licencia ODbL. Capas
+        adicionales provienen de fuentes locales o institucionales.
+      </small>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-SmHgwlHcCbto2HjSAGAj4Tk0m6tcwBfHfM5Z8Hf7kL8="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/osmtogeojson@3.0.0/osmtogeojson.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
